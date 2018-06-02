@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employeeList xmlns:ns2="http://test"
+	xmlns:ns3="http://turcell.com">
+	<ns3:Employee>
+		<name>osman</name>
+		<surname>yaycioglu</surname>
+		<age>48</age>
+		<phone>5435022313</phone>
+		<ns2:address>
+			<city>Istanbul</city>
+			<town>atasehir</town>
+		</ns2:address>
+	</ns3:Employee>
+	<ns3:Employee>
+		<name>osman</name>
+		<surname>yaycioglu</surname>
+		<age>48</age>
+		<phone>5435022313</phone>
+		<ns2:address>
+			<city>Istanbul</city>
+			<town>umraniye</town>
+		</ns2:address>
+	</ns3:Employee>
+</employeeList>

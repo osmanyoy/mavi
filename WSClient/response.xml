@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<S:Envelope
+	xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header>
+		<Auth xmlns="" password="1234" username="osman"></Auth>
+	</SOAP-ENV:Header>
+	<S:Body xmlns:ns2="http://turcell.com">
+		<ns2:getEmployee xmlns:ns2="http://turcell.com">
+			<employeeId xmlns="">5</employeeId>
+		</ns2:getEmployee>
+	</S:Body>
+</S:Envelope>
+--------------------

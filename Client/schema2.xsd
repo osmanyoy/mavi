@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://test">
+
+  <xs:import namespace="http://test" schemaLocation="schema1.xsd"/>
+
+  <xs:element name="employee" type="mytype"/>
+
+  <xs:complexType name="mytype">
+    <xs:sequence>
+      <xs:element name="isim" type="xs:string" minOccurs="1"/>
+      <xs:element name="surname" type="xs:string" minOccurs="0"/>
+      <xs:element name="age" type="xs:int"/>
+      <xs:element name="phone" type="xs:string" minOccurs="0"/>
+      <xs:element ref="ns1:address" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element name="city" type="xs:string" minOccurs="0"/>
+      <xs:element name="town" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
